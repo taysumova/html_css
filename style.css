@@ -16,7 +16,6 @@ body {
     background-image: url(img/slider-img.jpg);
     width: 1366px;
     height: 800px;
-    margin: 0 auto;
 }
 
 
@@ -30,16 +29,20 @@ body {
     list-style-type: none;
     display: inline-block;
     margin-right: 9px;
-    margin-top: 51px;
+    margin-top: 67px;
     float: right;
-    width: 490px;
+    padding: 0px;
 }
+
 
 .nav_bar li {
     float: left;
+    background-color: red;
+    display: inline;
 }
 
 .nav_bar li a {
+    display: inline;
     color: #8c8c8c;
     font-weight: 300;
     font-size: 14px;
@@ -49,20 +52,16 @@ body {
     padding-bottom: 3px;
     padding-left: 14px;
     padding-right: 14px;
-
 }
 
 .nav_bar li a:hover {
     color: #212121;
     font-weight: 700;
     border-bottom: 3px solid #212121;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 0px;
 }
 
 .search {
-    margin-top: 78px;
+    margin-top: 67px;
     margin-right: 167px;
     width: 27px;
     height: 27px;
@@ -123,10 +122,22 @@ body {
     background: #ffffff url(img/arrow.png) no-repeat 173px 16px;
 }
 
+
+.nav_buttons {
+    margin: 120px;
+}
+
 .nav_button {
     background-color: gray;
-    display: block;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+
+.nav_button:hover {
+    background-color: black;
+    width: 40px;
+    height: 40px;
 }
