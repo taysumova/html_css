@@ -4,6 +4,9 @@ html,
 body {
     font-family: 'Montserrat';
     background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    color: #6c6c6c;
 }
 
 .container {
@@ -40,8 +43,6 @@ body {
 .nav_bar li a {
     display: inline;
     color: #8c8c8c;
-    font-weight: 300;
-    font-size: 14px;
     line-height: 48px;
     text-align: right;
     text-decoration: none;
@@ -94,9 +95,6 @@ body {
 }
 
 .slider_content p {
-    color: #6c6c6c;
-    font-size: 14px;
-    font-weight: 300;
     line-height: 24px;
     text-align: left;
     margin-bottom: 36px;
@@ -189,15 +187,11 @@ input[class="order"]:hover {
     margin-right: 102px;
     padding-right: 21px;
     display: block;
-}
-
-/*for item_list1 and item_list2 - button "explore us"*/
+}/*for item_list1 and item_list2 - button "explore us"*/
 
 .explore:hover {
     background: #ffffff url(img/arrow.png) no-repeat 140px;
-}
-
-/*for item_list1 and item_list2 - button "explore us"*/
+}/*for item_list1 and item_list2 - button "explore us"*/
 
 
 .items_small {
@@ -283,7 +277,6 @@ input[class="order"]:hover {
     display: inline;
     color: #6c6c6c;
     font-size: 13.94px;
-    font-weight: 300;
     line-height: 22px;
     text-align: center;
     transform: scaleX(1.0041);
@@ -334,9 +327,7 @@ input[class="order"]:hover {
 }
 
 .items_big .item p {
-    color: #6c6c6c;
     font-size: 13.99px;
-    font-weight: 300;
     line-height: 24px;
     text-align: left;
     transform: scaleY(1.0022);
@@ -440,9 +431,7 @@ input[class="order"]:hover {
 }
 
 .item_list3 .item p {
-    color: #6c6c6c;
     font-size: 13.99px;
-    font-weight: 300;
     line-height: 24px;
     text-align: left;
     transform: scaleY(1.0022);
@@ -473,7 +462,6 @@ input[class="order"]:hover {
 }
 
 .mobile_app h3 {
-    color: #6c6c6c;
     font-size: 18px;
     font-weight: 700;
     line-height: 48px;
@@ -494,9 +482,7 @@ input[class="order"]:hover {
 }
 
 .mobile_app p {
-    color: #6c6c6c;
     font-size: 22px;
-    font-weight: 300;
     line-height: 24px;
     text-align: left;
     margin-bottom: 33px;
@@ -516,7 +502,6 @@ input[class="order"]:hover {
 }
 
 .footer .contact_us h4 {
-    color: #6c6c6c;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -525,7 +510,6 @@ input[class="order"]:hover {
 
 .footer .contact_us p {
     color: #212121;
-    font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
@@ -538,7 +522,6 @@ input[class="order"]:hover {
 }
 
 .footer .useful_info h4 {
-    color: #6c6c6c;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -555,7 +538,6 @@ input[class="order"]:hover {
 
 .footer .useful_info ul li a {
     color: #212121;
-    font-size: 14px;
     font-weight: 700;
     line-height: 26px;
     text-align: left;
@@ -570,7 +552,6 @@ input[class="order"]:hover {
 }
 
 .footer .in_touch h4 {
-    color: #6c6c6c;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -579,15 +560,12 @@ input[class="order"]:hover {
 
 .footer .in_touch p {
     color: #212121;
-    font-size: 14px;
-    font-weight: 300;
     line-height: 22px;
     text-align: left;
     overflow: hidden;
 }
 
 .footer .in_touch input[type="email"] {
-    color: #6c6c6c;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -610,7 +588,7 @@ input[class="order"]:hover {
     border-color: #d9dee1;
     border-style: solid;
     background-color: #ffffff;
-    margin-top: 1px;
+    margin-top: -1px;
 }
 
 .footer .footer_bottom {
@@ -619,7 +597,6 @@ input[class="order"]:hover {
 }
 
 .footer .footer_bottom .copyright {
-    color: #6c6c6c;
     font-size: 12px;
     font-weight: 700;
     line-height: 26px;
@@ -638,7 +615,6 @@ input[class="order"]:hover {
 
 
 .footer .footer_bottom .docs {
-    color: #6c6c6c;
     font-size: 12px;
     font-weight: 700;
     line-height: 26px;
@@ -650,8 +626,8 @@ input[class="order"]:hover {
 
 
 .footer .footer_bottom .docs a {
-    text-decoration: none;
     color: #6c6c6c;
+    text-decoration: none;
     font-size: 12px;
     font-weight: 700;
     line-height: 26px;
