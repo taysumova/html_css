@@ -610,6 +610,7 @@ input[class="order"]:hover {
     border-color: #d9dee1;
     border-style: solid;
     background-color: #ffffff;
+    margin-top: 1px;
 }
 
 .footer .footer_bottom {
