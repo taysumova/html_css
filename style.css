@@ -432,10 +432,6 @@
     margin-left: 32px;
 }
 
-.item_list3 .item .order {
-    margin-left: 32px;
-}
-
 .item_list3 img {
     width: 270px;
     height: 270px;
@@ -573,12 +569,13 @@
 .footer .in_touch input[type="submit"] {
     background: url(img/submit.png) no-repeat 10px;
     width: 46px;
-    height: 48.2px;
+    height: 48px;
     cursor: pointer;
-    border-width: 0.5px 0.5px 0.5px 0px;
+    border-width: 1px 1px 1px 0px;
     border-color: #d9dee1;
     border-style: solid;
     background-color: #ffffff;
+    margin-top: 2.3px;
 }
 
 .footer .footer_bottom {
@@ -593,6 +590,7 @@
     text-align: left;
     text-transform: uppercase;
     float: left;
+    margin-top: 10px;
 }
 
 .footer .network_icons {
