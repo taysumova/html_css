@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,22 +15,31 @@
     color: #6c6c6c;
 }
 
-.header {
+.sticky_menu {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 11.76px 0.24px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    padding-left: 98px;
+    position: sticky;
+    top: 0;
+}
+
+.slider {
     background-image: url(img/slider-img.jpg);
-    height: 800px;
+    height: 770px;
+    padding-top: 27px;
+    padding-left: 98px;
 }
 
 .logo {
-    margin-left: 98px;
-    margin-top: 67px;
-    margin-bottom: 262px;
+    margin-top: 20px;
     float: left;
 }
 
 .nav_bar {
     list-style-type: none;
     margin-right: 9px;
-    margin-top: 53px;
+    margin-top: 7px;
     float: right;
 }
 
@@ -55,17 +65,18 @@
 }
 
 .search {
-    margin-top: 67px;
+    margin-top: 20px;
     margin-right: 167px;
     width: 27px;
     height: 27px;
     float: right;
 }
 
-.slider {
-    margin-left: 98px;
-    clear: both;
+
+.slider .slider_content {
+    padding-top: 317px;
 }
+
 
 .slider_content h3 {
     color: #43a047;
@@ -73,7 +84,6 @@
     font-weight: 700;
     line-height: 48px;
     text-align: left;
-    display: inline;
     clear: both;
 }
 
@@ -84,7 +94,6 @@
     line-height: 72px;
     text-align: left;
     text-transform: uppercase;
-    padding: 0px;
     margin-top: -10px;
     margin-bottom: 14px;
     clear: both;
@@ -119,7 +128,7 @@
 
 .nav_buttons {
     text-align: center;
-    margin-top: 130px;
+    margin-top: 125px;
     margin-left: -98px;
 }
 
@@ -172,7 +181,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
-    margin-top: 32px;
+    margin-top: 15px;
     margin-right: 102px;
     padding-right: 21px;
     display: block;
@@ -404,7 +413,7 @@
     height: 570px;
     float: left;
     margin-bottom: 120px;
-    
+
 }
 
 .item_list3 .item h3 {
@@ -423,6 +432,7 @@
     font-weight: 700;
     text-align: left;
     margin-left: 32px;
+    margin-bottom: 24px;
 }
 
 .item_list3 .item p {
@@ -625,4 +635,9 @@
     line-height: 26px;
     text-align: right;
     text-transform: uppercase;
+}
+
+
+.item details_menu {
+    margin-top: 20px;
 }
