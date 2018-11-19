@@ -323,6 +323,7 @@
     font-size: 36px;
     font-weight: 700;
     text-align: left;
+    margin-bottom: 24px;
 }
 
 .items_big .item p {
@@ -403,6 +404,7 @@
     height: 570px;
     float: left;
     margin-bottom: 120px;
+    
 }
 
 .item_list3 .item h3 {
@@ -429,6 +431,10 @@
     text-align: left;
     transform: scaleY(1.0022);
     margin-bottom: 34px;
+    margin-left: 32px;
+}
+
+.item_list3 .item .order {
     margin-left: 32px;
 }
 
