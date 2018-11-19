@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700');
+* {
+    margin: 0;
+    padding: 0;
+}
 
-html,
-body {
+.container {
+    width: 1366px;
+    margin: 0 auto;
     font-family: 'Montserrat';
     background-color: #ffffff;
     font-size: 14px;
@@ -9,17 +14,10 @@ body {
     color: #6c6c6c;
 }
 
-.container {
-    margin: 0 auto;
-    width: 100%;
-}
-
 .header {
     background-image: url(img/slider-img.jpg);
-    width: 1366px;
     height: 800px;
 }
-
 
 .logo {
     margin-left: 98px;
@@ -37,7 +35,6 @@ body {
 
 .nav_bar li {
     float: left;
-
 }
 
 .nav_bar li a {
@@ -48,7 +45,7 @@ body {
     text-decoration: none;
     border-bottom: 3px solid transparent;
     padding: 0px 14px 2px;
-
+    font-weight: 700;
 }
 
 .nav_bar li a:hover {
@@ -64,7 +61,6 @@ body {
     height: 27px;
     float: right;
 }
-
 
 .slider {
     margin-left: 98px;
@@ -90,7 +86,7 @@ body {
     text-transform: uppercase;
     padding: 0px;
     margin-top: -10px;
-    margin-bottom: 0px;
+    margin-bottom: 14px;
     clear: both;
 }
 
@@ -101,13 +97,6 @@ body {
 }
 
 .order {
-    background: #ffffff;
-    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
-    width: 212px;
-    height: 45px;
-}
-
-input[class="order"] {
     display: block;
     color: #212121;
     font-size: 18px;
@@ -118,13 +107,15 @@ input[class="order"] {
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
+    background: #ffffff;
+    width: 212px;
+    height: 45px;
 }
 
-
-input[class="order"]:hover {
+.order:hover {
     background: #ffffff url(img/arrow.png) no-repeat 173px 16px;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 }
-
 
 .nav_buttons {
     text-align: center;
@@ -141,7 +132,6 @@ input[class="order"]:hover {
     margin: 6px;
 }
 
-
 .nav_button:hover {
     background-color: black;
     width: 40px;
@@ -150,7 +140,6 @@ input[class="order"]:hover {
 }
 
 .item_list1 {
-    width: 1366px;
     margin-top: 110px;
 }
 
@@ -187,12 +176,17 @@ input[class="order"]:hover {
     margin-right: 102px;
     padding-right: 21px;
     display: block;
-}/*for item_list1 and item_list2 - button "explore us"*/
+}
+
+
+/*for item_list1 and item_list2 - button "explore us"*/
 
 .explore:hover {
     background: #ffffff url(img/arrow.png) no-repeat 140px;
-}/*for item_list1 and item_list2 - button "explore us"*/
+}
 
+
+/*for item_list1 and item_list2 - button "explore us"*/
 
 .items_small {
     clear: both;
@@ -200,9 +194,7 @@ input[class="order"]:hover {
 }
 
 .items_small .item {
-    background-color: #ffffff;
     border: 1px solid transparent;
-    opacity: 0.9;
     width: 268px;
     height: 268px;
     float: left;
@@ -210,8 +202,13 @@ input[class="order"]:hover {
     margin-top: 51px;
     display: flex;
     flex-direction: column;
-    color: transparent;
 }
+
+.items_small .item .hidden {
+    opacity: 0;
+    height: 100%;
+}
+
 
 .items_small .item:first-child {
     margin-left: 0px;
@@ -234,14 +231,17 @@ input[class="order"]:hover {
     border: 1px solid #9c9c9c;
     width: 268px;
     height: 268px;
-    background-image: none;
 }
 
-.items_small .item a {
+.items_small .item .hidden:hover {
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 1;
+}
+
+.items_small .item .arrow1 {
     display: block;
     border-radius: 50%;
     background-color: #ffffff;
-    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     width: 48px;
     height: 48px;
     text-align: center;
@@ -249,12 +249,13 @@ input[class="order"]:hover {
     color: #212121;
     font-weight: 700;
     font-size: 28px;
-    line-height: 28px
-}
-
-.items_small .item .arrow1 {
+    line-height: 28px;
     margin-left: 111px;
     margin-top: 62px;
+}
+
+.items_small .item .arrow1:hover {
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 }
 
 .items_small .item img {
@@ -270,24 +271,23 @@ input[class="order"]:hover {
     line-height: 30px;
     text-align: center;
     transform: scaleX(1.0041);
+    margin: 9px auto;
 }
 
 
 .items_small .item p {
-    display: inline;
     color: #6c6c6c;
     font-size: 13.94px;
     line-height: 22px;
     text-align: center;
     transform: scaleX(1.0041);
-    margin-left: 16px;
+    padding-left: 16px;
     margin-right: 16px;
-    margin-top: -14px;
 }
+
 
 .items_big {
     clear: both;
-    width: 1366px;
 }
 
 .items_big .item {
@@ -323,7 +323,6 @@ input[class="order"]:hover {
     font-size: 36px;
     font-weight: 700;
     text-align: left;
-    margin-top: -28px;
 }
 
 .items_big .item p {
@@ -331,12 +330,10 @@ input[class="order"]:hover {
     line-height: 24px;
     text-align: left;
     transform: scaleY(1.0022);
-    margin-top: -14px;
     margin-bottom: 34px;
 }
 
 .item_list2 {
-    width: 1366px;
     margin-left: 98px;
     margin-right: 98px;
 }
@@ -352,9 +349,8 @@ input[class="order"]:hover {
 }
 
 .item_list2 a.explore {
-    margin-right: 198px;
     margin-top: 137px;
-
+    margin-right: 0px
 }
 
 .item_list2 .images {
@@ -372,7 +368,6 @@ input[class="order"]:hover {
 }
 
 .slider2 {
-    width: 1366px;
     height: 800px;
     margin-top: 120px;
     background-image: url(img/slider.jpg)
@@ -392,7 +387,7 @@ input[class="order"]:hover {
 }
 
 .slider2 .nav_buttons {
-    margin-top: 198px;
+    margin-top: 190px;
     margin-left: -8px;
 }
 
@@ -425,8 +420,6 @@ input[class="order"]:hover {
     font-size: 36px;
     font-weight: 700;
     text-align: left;
-    margin-top: -23px;
-    margin-bottom: -4px;
     margin-left: 32px;
 }
 
@@ -454,11 +447,9 @@ input[class="order"]:hover {
 .mobile_app {
     clear: both;
     background-image: url(img/back-img.jpg);
-    width: 1267px;
     height: 391px;
     padding-left: 99px;
     padding-top: 112px;
-
 }
 
 .mobile_app h3 {
@@ -477,20 +468,18 @@ input[class="order"]:hover {
     line-height: 72px;
     text-align: left;
     text-transform: uppercase;
-    margin-top: -2px;
-    margin-bottom: -6px;
+    margin-bottom: 13px;
 }
 
 .mobile_app p {
     font-size: 22px;
     line-height: 24px;
     text-align: left;
-    margin-bottom: 33px;
+    margin-bottom: 38px;
 }
 
 .footer {
     background-color: #f7f7f7;
-    width: 1267px;
     height: 334px;
     padding-left: 99px;
     padding-top: 90px;
@@ -506,6 +495,7 @@ input[class="order"]:hover {
     font-weight: 700;
     line-height: 24px;
     text-align: left;
+    margin-bottom: 22px;
 }
 
 .footer .contact_us p {
@@ -526,6 +516,7 @@ input[class="order"]:hover {
     font-weight: 700;
     line-height: 24px;
     text-align: left;
+    margin-bottom: 22px;
 }
 
 .footer .useful_info ul {
@@ -533,7 +524,6 @@ input[class="order"]:hover {
     float: left;
     padding-left: 0px;
     margin-right: 93px;
-    margin-top: -4px;
 }
 
 .footer .useful_info ul li a {
@@ -548,7 +538,6 @@ input[class="order"]:hover {
 .footer .in_touch {
     width: 372px;
     overflow: hidden;
-
 }
 
 .footer .in_touch h4 {
@@ -556,6 +545,7 @@ input[class="order"]:hover {
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
+    margin-bottom: 22px;
 }
 
 .footer .in_touch p {
@@ -563,6 +553,7 @@ input[class="order"]:hover {
     line-height: 22px;
     text-align: left;
     overflow: hidden;
+    margin-bottom: 26px;
 }
 
 .footer .in_touch input[type="email"] {
@@ -582,13 +573,12 @@ input[class="order"]:hover {
 .footer .in_touch input[type="submit"] {
     background: url(img/submit.png) no-repeat 10px;
     width: 46px;
-    height: 50px;
+    height: 48.2px;
     cursor: pointer;
-    border-width: 1px 1px 1px 0px;
+    border-width: 0.5px 0.5px 0.5px 0px;
     border-color: #d9dee1;
     border-style: solid;
     background-color: #ffffff;
-    margin-top: -1px;
 }
 
 .footer .footer_bottom {
@@ -613,7 +603,6 @@ input[class="order"]:hover {
     margin-top: 10px;
 }
 
-
 .footer .footer_bottom .docs {
     font-size: 12px;
     font-weight: 700;
@@ -624,7 +613,6 @@ input[class="order"]:hover {
     margin-top: 10px;
 }
 
-
 .footer .footer_bottom .docs a {
     color: #6c6c6c;
     text-decoration: none;
@@ -634,4 +622,3 @@ input[class="order"]:hover {
     text-align: right;
     text-transform: uppercase;
 }
-
