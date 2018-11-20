@@ -638,6 +638,38 @@
 }
 
 
-.item details_menu {
-    margin-top: 20px;
+.menu_item_details {
+    margin-top: 53px;
 }
+
+.menu_item_details .logo {
+    margin-left: 98px;
+}
+
+.menu_item_details + .nav_menu {
+    background-color:  #f4f4f4;
+    width: 1366px;
+    padding: 28px;
+    height: 14px;
+    margin-top: 29px;
+    float: left;
+    text-align: center;
+}
+
+.menu_item_details + .nav_menu li {
+    display: inline;
+}
+
+.menu_item_details + .nav_menu li a {
+    text-decoration: none;
+    color:  #6c6c6c;
+    font-size: 17.99px;
+    font-weight: 700;
+    transform: scaleY(1.0006);
+    margin-right: 35px;
+}
+
+.menu_item_details + .nav_menu li a:hover {
+    color:  #212121;
+}
+
