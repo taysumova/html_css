@@ -912,23 +912,24 @@ img {
 }
 
 .contacts .block {
-    border-width: 1px;
-    border-color: #9c9c9c;
-    border-style: solid;
+    border: 1px solid #9c9c9c;
     background-color: #ffffff;
     opacity: 0.9;
-    width: 368px;
-    height: 368px;
-    margin: 15px;
+    width: 287px;
+    height: 257px;
+    padding: 48px 40px 63px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-left: 30px;
 }
 
-.contacts .block span {
-    width: 38px;
-    height: 48px;
-    margin: 48px 166px 28px;
+.contacts .block:first-child {
+    margin-left: 0px;
+}
+
+.contacts .block > span {
+    margin-bottom: 34px;
 }
 
 .contacts .block h4 {
@@ -954,5 +955,4 @@ img {
     font-weight: 300;
     line-height: 20.082px;
     transform: scaleX(1.0041);
-    margin: 0;
 }
