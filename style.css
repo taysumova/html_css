@@ -729,6 +729,7 @@ img {
     flex-direction: column;
     margin-right: 34px;
     padding-top: 47px;
+    width: 510px;
 }
 
 .description .price {
@@ -867,7 +868,6 @@ img {
 }
 
 .catalog .item_pictures {
-    display: -ms-grid;
     display: grid;
     grid-gap: 30px;
     clear: both;
