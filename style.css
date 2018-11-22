@@ -31,6 +31,7 @@ img {
     height: 60px;
     padding-left: 98px;
     top: 0;
+    position: sticky;
 }
 
 .slider {
@@ -312,8 +313,6 @@ img {
     float: left;
     width: 632px;
     height: 455px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     padding-left: 51px;
