@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700');
+
 * {
     margin: 0;
     padding: 0;
+}
+
+
+img {
+    border: none;
 }
 
 .container {
@@ -24,6 +30,7 @@
     box-shadow: 0px 0px 11.76px 0.24px rgba(0, 0, 0, 0.25);
     height: 60px;
     padding-left: 98px;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -71,11 +78,12 @@
 }
 
 .search {
-    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 900;
+    margin-top: 22px;
     margin-right: 167px;
-    width: 27px;
-    height: 27px;
     float: right;
+    text-decoration: none;
 }
 
 .slider .slider_content {
@@ -123,6 +131,7 @@
     background: #ffffff;
     width: 212px;
     height: 45px;
+    text-decoration: none;
 }
 
 .order:hover {
@@ -169,8 +178,8 @@
     text-align: left;
     text-decoration: none;
     border-bottom: 3px solid transparent;
-    margin-right: -105px;
-    padding: 15px;
+    margin-right: -95px;
+    padding-right: 45px;
 }
 
 .item_list1 > h2 a:hover {
@@ -224,7 +233,7 @@
 
 .items_small .item:first-child {
     margin-left: 0px;
-    background: url(img/product-4.jpg);
+    background: url(img/product-1.jpg);
 }
 
 .items_small .item:nth-child(2) {
@@ -246,7 +255,7 @@
 }
 
 .items_small .item .hidden:hover {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     opacity: 1;
 }
 
@@ -361,7 +370,7 @@
 
 .item_list2 a.explore {
     margin-top: 137px;
-    margin-right: 0px
+    margin-right: 0px;
 }
 
 .item_list2 .images {
@@ -376,6 +385,10 @@
 .item_list2 .images img {
     width: 370px;
     height: 370px;
+}
+
+.item_list2 .images a img:hover {
+    outline: 1px solid gray;
 }
 
 .slider2 {
@@ -611,11 +624,21 @@
 }
 
 .footer .network_icons {
-    width: 129px;
+    width: 153px;
     height: 28px;
     float: left;
-    margin-left: 180px;
+    margin-left: 170px;
     margin-top: 10px;
+}
+
+.network_icons a {
+    color: gray;
+    text-decoration: none;
+    margin: -2px;
+}
+
+.network_icons a:hover {
+    color: black;
 }
 
 .footer .footer_bottom .docs {
@@ -670,42 +693,48 @@
 }
 
 .main {
-    clear: both;
-    height: 640px;
-    margin-left: 98px;
-    margin-bottom: 100px;
-    padding-top: 72px;
+    padding: 0px 98px;
+    margin-top: 172px;
+    margin-bottom: 120px;
+}
+
+.main .order_item {
+    padding-top: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
 }
 
-.picture {
-    float: left;
+.main .order_item .picture {
+    margin-right: 61px;
 }
 
-.picture .big_pic {
+.order_item .big_pic {
     width: 570px;
     height: 570px;
 }
 
-.small_pic {
-    padding-left: 150px;
+.order_item .small_pic {
+    text-align: center;
 }
 
-.picture .small_pic a img {
+.order_item .small_pic a img {
     width: 70px;
     height: 71px;
     margin: 10px;
 }
 
-.main > .description {
-    float: right;
+.main .description {
     color: #212121;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 45px;
-    margin-left: 61px;
-    margin-right: 138px;
+    margin-right: 34px;
+    padding-top: 47px;
 }
 
 .description .price {
@@ -747,11 +776,6 @@
     padding-bottom: 10px;
 }
 
-.main + .item_list2 {
-    margin-bottom: -250px;
-    overflow: hidden;
-}
-
 .description .order {
     background-color: #f44336;
     width: 510px;
@@ -768,6 +792,41 @@
 .description .order:hover {
     background: #f44336 url(img/arrow_white.png) no-repeat 343px 22px;
 }
+
+
+.main a img:hover {
+    outline: 1px solid gray;
+}
+
+.main .item_list {
+    margin-top: 230px;
+}
+
+
+.main .item_list h2 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 71px;
+    float: left;
+}
+
+.main .item_list .explore {
+    margin-right: 0px;
+}
+
+.main .item_list .images {
+    clear: both;
+}
+
+.main .item_list .images a {
+    margin-left: 25px;
+}
+
+.main .item_list .images a:first-child {
+    margin-left: 0px;
+}
+
 
 .catalog {
     padding-top: 65px;
@@ -827,10 +886,14 @@
     height: 370px;
 }
 
-.load_icon img {
+
+.catalog .item_pictures a:hover {
+    outline: 0.5px solid gray;
+}
+
+.load_icon {
     width: 62px;
-    height: 55px;
-    display: block;
+    padding: 30px;
     margin: 0 auto;
 }
 
@@ -862,7 +925,7 @@
     text-align: center;
 }
 
-.contacts .block img {
+.contacts .block span {
     width: 38px;
     height: 48px;
     margin: 48px 166px 28px;
@@ -891,4 +954,5 @@
     font-weight: 300;
     line-height: 20.082px;
     transform: scaleX(1.0041);
+    margin: 0;
 }
