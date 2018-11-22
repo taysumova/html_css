@@ -868,6 +868,8 @@ img {
 
 .catalog .item_pictures {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 30px;
     clear: both;
     padding: 51px 98px 71px;
